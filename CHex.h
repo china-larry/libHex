@@ -60,6 +60,12 @@ private:
     // 检测范围
     double m_dRangMinArray[5];
     double m_dRangMaxArray[5];
+    // 项目名称
+    QString m_strProjectNameArray[5];
+    // 打印信息
+    unsigned short m_usPrintInfoCount;
+    QString m_strPrintInfo;// 倒叙打印
+
 };
 
 #endif // CHEX_H
