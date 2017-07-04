@@ -9,6 +9,8 @@ public:
     CHex();
 
 public:
+
+    ///////////////////////////////////////////////////////
     //  项目1公共数据区
     unsigned short GetProjectCount();// 项目数
     QString GetrBatchPreNum();// 批号前缀
@@ -60,6 +62,8 @@ public:
     // 打印信息
     unsigned short GetPrintInfoCount();
     QString GetPrintInfo();// 倒叙打印
+
+    ///////////////////////////////////////////////////////
     // 项目1公共数据区
     void SetProjectCount(unsigned short usProjectCount);
     void SetrBatchPreNum(QString strBatchPreNum);// 批号前缀
@@ -112,6 +116,7 @@ public:
     void SetPrintInfoCount(unsigned short usPrintInfoCount);
     void SetPrintInfo(QString strPrintInfo);// 倒叙打印
 private:
+    ///////////////////////////////////////////////////////
     // 项目1公共数据区
     unsigned short m_usProjectCount;// 项目数
     QString m_strBatchPreNum;// 批号前缀
@@ -163,6 +168,8 @@ private:
     // 打印信息
     unsigned short m_usPrintInfoCount;
     QString m_strPrintInfo;// 倒叙打印
+    ///////////////////////////////////////////////////////
+    // 项目1飞测2数据区
 
 };
 
