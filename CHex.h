@@ -17,8 +17,8 @@ public:
     unsigned short GetBarcodeFlag();// 条码标识
     unsigned short GetBarcodeNum();// 条码号
     unsigned short GetStandardCount();// 标准点数
-    unsigned short GetTemperatureFlag();// 是否温度补偿
-    unsigned short GetAreaUseFlag();// 是否设定区域
+    bool GetTemperatureFlag();// 是否温度补偿
+    bool GetAreaUseFlag();// 是否设定区域
     QString GetrAreaUseName();// 区域名称
     QString GetrTitleName();// 报告单标题】
     QString GetrUnitName();// 单位名称
@@ -70,8 +70,8 @@ public:
     void SetBarcodeFlag(unsigned short usBarcodeFlag);// 条码标识
     void SetBarcodeNum(unsigned short usBarcodeNum);// 条码号
     void SetStandardCount(unsigned short usStandardCount);// 标准点数
-    void SetTemperatureFlag(unsigned short usTemperatureFlag);// 是否温度补偿
-    void SetAreaUseFlag(unsigned short usAreaUseFlag);// 是否设定区域
+    void SetTemperatureFlag(bool bTemperatureFlag);// 是否温度补偿
+    void SetAreaUseFlag(bool bAreaUseFlag);// 是否设定区域
     void SetrAreaUseName(QString strAreaUseName);// 区域名称
     void SetrTitleName(QString strTitleName);// 报告单标题】
     void SetrUnitName(QString strUnitName);// 单位名称
@@ -123,10 +123,10 @@ private:
     unsigned short m_usBarcodeFlag;// 条码标识
     unsigned short m_usBarcodeNum;// 条码号
     unsigned short m_usStandardCount;// 标准点数
-    unsigned short m_usTemperatureFlag;// 是否温度补偿
-    unsigned short m_usAreaUseFlag;// 是否设定区域
+    bool m_bTemperatureFlag;// 是否温度补偿
+    bool m_bAreaUseFlag;// 是否设定区域
     QString m_strAreaUseName;// 区域名称
-    QString m_strTitleName;// 报告单标题】
+    QString m_strTitleName;// 报告单标题
     QString m_strUnitName;// 单位名称
     unsigned short m_usDecimalsDigit;// 小数点位
     unsigned short m_usCountDownTime;// 倒计时时间
@@ -169,7 +169,16 @@ private:
     unsigned short m_usPrintInfoCount;
     QString m_strPrintInfo;// 倒叙打印
     ///////////////////////////////////////////////////////
+
     // 项目1飞测2数据区
+    unsigned short m_usF2OverflowPeak;// 冲顶峰值名称
+    unsigned short m_usF2ShortagePeak;// 加样峰值名称
+    bool m_bF2OverflowFlag;// 是否冲顶
+    bool m_bF2ShortageFlag;// 是否加样
+    unsigned short m_usF2OverflowValue;
+
+
+
 
 };
 

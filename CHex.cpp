@@ -30,14 +30,14 @@ unsigned short CHex::GetStandardCount()
     return m_usStandardCount;
 }
 
-unsigned short CHex::GetTemperatureFlag()
+bool CHex::GetTemperatureFlag()
 {
-    return m_usTemperatureFlag;
+    return m_bTemperatureFlag;
 }
 
-unsigned short CHex::GetAreaUseFlag()
+bool CHex::GetAreaUseFlag()
 {
-    return m_usAreaUseFlag;
+    return m_bAreaUseFlag;
 }
 
 QString CHex::GetrAreaUseName()
@@ -220,14 +220,14 @@ void CHex::SetStandardCount(unsigned short usStandardCount)
     m_usStandardCount = usStandardCount;
 }
 
-void CHex::SetTemperatureFlag(unsigned short usTemperatureFlag)
+void CHex::SetTemperatureFlag(bool bTemperatureFlag)
 {
-    m_usTemperatureFlag = usTemperatureFlag;
+    m_bTemperatureFlag = bTemperatureFlag;
 }
 
-void CHex::SetAreaUseFlag(unsigned short usAreaUseFlag)
+void CHex::SetAreaUseFlag(bool bAreaUseFlag)
 {
-    m_usAreaUseFlag = usAreaUseFlag;
+    m_bAreaUseFlag = bAreaUseFlag;
 }
 
 void CHex::SetrAreaUseName(QString strAreaUseName)
